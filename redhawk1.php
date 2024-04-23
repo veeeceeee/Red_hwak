@@ -547,7 +547,7 @@ askscan:
                     $vuln_json = readcontents("https://wpvulndb.com/api/v2/wordpresses/" . $wp_version);
                     if (strpos($vuln_json, "The page you were looking for doesn't exist (404)") !== false)
                       {
-                        echo $red . "[!] Seems like the version detection messed up preety bad! Please report here: https://github.com/Tuhinshubhra/RED_HAWK/issues/new\n";
+                        echo $red . "[!] Seems like the version detection messed up preety bad! Please report here: https://github.com/veeeceeee/RED_HAWK/issues/new\n";
                       }
                     else
                       {
@@ -747,7 +747,7 @@ askscan:
           {
             echo "\n\n" . $bold . $yellow . "-[ RED HAWK Update Corner]-\n\n" . $cln;
             echo $bold . "[i] Fetching Stuffs .... \n" . $cln;
-            $latestversion = readcontents("https://raw.githubusercontent.com/Tuhinshubhra/RED_HAWK/master/version.txt");
+            $latestversion = readcontents("https://raw.githubusercontent.com/veeeceeee/RED_HAWK/master/version.txt");
             echo $bold . $blue . "[C] Current Version: " . $rhversion . $cln;
             echo "\n" . $bold . $lblue . "[L] Latest Version:  " . $latestversion . $cln;
             if ($latestversion > $rhversion)
@@ -1233,3 +1233,4 @@ csel:
       }
   }
 ?>
+
